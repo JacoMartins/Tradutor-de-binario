@@ -1,0 +1,40 @@
+*{
+    font-family: Arial;
+}
+
+body{
+    background-color:lightgrey;
+}
+
+.textinput {
+    position: relative;
+    --height: 30px;
+    --width: 350px;
+    height: var(--height);
+    width: var(--width);
+}
+
+.form {
+    position: absolute;
+    --height: 280px;
+    --width: 350px;
+    height: var(--height);
+    width: var(--width);
+    left: calc(50% - calc(var(--width) / 2));
+    top: calc(50% - calc(var(--height) / 2));
+}
+
+.button {
+    --paddingheight: 6px;
+    padding-top: var(--paddingheight);
+    padding-bottom: var(--paddingheight);
+}
+
+#feitopor {
+    position: absolute;
+    font-family: Arial;
+    font-size: 16px;
+    left: 50%;
+    top: calc(50% + 280px);
+    transform: translate(-50%, -50%);
+}
